@@ -1,0 +1,20 @@
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^(es/)*(.*)$ https://ruben.marreroruiz.com/es/$2 [L,R=301]
+
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^(en/)*(.*)$ https://ruben.marreroruiz.com/en/$2 [L,R=301]
+
+RewriteRule ^(.*)$ https://ruben.marreroruiz.com/en/$1 [L,R=301]RewriteEngine on
+RewriteBase /
+
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^(es/)*(.*)$ https://ruben.marreroruiz.com/es/$2 [L,R=301]
+
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^(en/)*(.*)$ https://ruben.marreroruiz.com/en/$2 [L,R=301]
+
+RewriteRule ^(.*)$ https://ruben.marreroruiz.com/en/$1 [L,R=301]
